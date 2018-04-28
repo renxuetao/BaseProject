@@ -1,0 +1,59 @@
+<resources>
+
+    <!--<string name="app_name">Lenovo Video</string>-->
+
+    <!--登录-->
+    <string name="not_found_text">Sorry, we could not find any videos related to%1$s~\nLenovo Video recommends simplifying your search or using different search terms.</string>
+    <string name="sig_hint_yes_no">You are currently using a 4G/3G network. Are you sure you want to continue?</string>
+    <string name="Confirm">Yes</string>
+    <string name="cancel">No</string>
+    <string name="No_Iqiyi">Please install IQIYI to stream this copyrighted content.</string>
+    <string name="install">Install</string>
+
+    <string name="verification_code_error">The verification code is incorrect. Please try again</string>
+    <string name="phone_number_error">The verification code is incorrect. Please try again</string>
+    <string name="please_enter_your_phone_number">Please enter your phone number</string>
+    <string name="please_enter_verify_code">Please enter the verification code</string>
+    <string name="log_out_hint">You cannot access the cloud service after you log out. Are you sure you want to log out?</string>
+    <string name="kiss_choose_the_deleted_movie_first">Please select the data you would like to delete</string>
+    <string name="sorry_not_find">Sorry, we could not find any related videos.</string>
+    <string name="server404">The server is unavailable. Press “Refresh” to try again.</string>
+    <string name="sig_hint">You are now using a 4G/3G/2G network</string>
+    <string name="copyright_notice">Please install IQIYI to stream this copyrighted content.</string>
+
+    <string name="account_Log_in">Log in</string>
+    <string name="Verification_Code_Login">Verification Code Login</string>
+    <string name="Account_Lenovo_id">Lenovo ID or phone number</string>
+    <string name="Account_">Account:</string>
+
+
+    <string name="Password">Password:</string>
+    <string name="Password_hint"> 6-20 digits, letters, and punctuation marks. Case sensitive</string>
+    <string name="Password_hint2">Please enter your password again.</string>
+    <string name="please_enter_verify_password">Please enter password</string>
+    <string name="Find_password">Find my password</string>
+    <string name="Register_Now">Register</string>
+    <string name="Log_in">Log in</string>
+    <string name="Account_registration">Account registration</string>
+    <string name="Photo_verification_code">Photo code</string>
+    <string name="SMS_verification_code">SMS code</string>
+    <string name="Send_verification_code">Send code</string>
+    <string name="Register">Log in</string>
+    <string name="Change_password">Change password</string>
+    <string name="SMS_Login">SMS Login</string>
+    <string name="Verification_code">Verification code:</string>
+    <string name="attention">I have read the</string>
+    <string name="attention1">User Agreement</string>
+    <string name="attention2">and</string>
+    <string name="attention3">Privacy Policy</string>
+    <string name="check_the_network_connection">To get the verification code failed, check the network connection</string>
+    <string name="attention_hint">Please check the terms of use and privacy policy first</string>
+
+
+
+    <string name="updateHint">Update Notification</string>
+    <string name="updateHintContext">Smart Lenovo has updated successfully. For the updates to take effect, we need to refresh your desktop. This will take a few seconds.</string>
+    <string name="updateHintR">REFRESH NOW</string>
+    <string name="updateHintNR">REFRESH AT NIGHT</string>
+    <string name="updateHint_not">ASK LATER</string>
+</resources>

@@ -1,0 +1,9 @@
+http://192.168.1.101:8080/myweb/4k_test/h264/0527.mp4
+http://192.168.1.101:8080/myweb/4k_test/h264/4K123.mp4
+http://192.168.1.101:8080/myweb/4k_test/h264/4K264.mp4
+http://192.168.1.101:8080/myweb/4k_test/h264/HD.Club-4K-Chimei-inn-60mbps.mp4
+http://192.168.1.101:8080/myweb/4k_test/hevc/4K-TCL-H265.mp4
+http://192.168.1.101:8080/myweb/4k_test/hevc/4K-super_car2.mp4
+http://192.168.1.101:8080/myweb/4k_test/hevc/AOA_Miniskirt.mp4
+http://192.168.1.101:8080/myweb/4k_test/hevc/LG.HDR.4K.DEMO_Dolby.Trailer-OLED.ts
+http://192.168.1.101:8080/myweb/4k_test/hevc/20_T-ara_No.9.ts
