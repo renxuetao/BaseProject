@@ -1,6 +1,6 @@
 package com.lenovo.video.base;
 
-import android.app.Activity;
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -11,7 +11,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lenovo.video.R;
@@ -51,7 +50,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  * 修改时间：2017/5/9 14:45
  * 修改备注：
  */
-public abstract class BaseActivity extends FragmentActivity implements SocketClientDelegate , SocketClientSendingDelegate
+public abstract class BaseActivity extends MPermissionsActivity implements SocketClientDelegate , SocketClientSendingDelegate
         , SocketClientReceivingDelegate, TencentLocationListener {
 
     private final String LAYOUT_LINEARLAYOUT = "LinearLayout";
@@ -459,6 +458,22 @@ public abstract class BaseActivity extends FragmentActivity implements SocketCli
         return sb.toString();
     }
 
+    /**
+     * 权限成功回调函数
+     * @param requestCode
+     */
+    @Override
+    public void permissionSuccess(int requestCode) {
+        super.permissionSuccess(requestCode);
 
+    }
+
+
+    /**
+     * 请求权限
+     */
+    public void requestPermission(String[] permissionArr, int result){
+        requestPermission(permissionArr, result);
+    }
 
 }
