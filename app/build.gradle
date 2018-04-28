@@ -165,6 +165,7 @@ dependencies {
     compile 'com.tencent.bugly:nativecrashreport:latest.release'
     //Tencnet lbs sdk
     compile files('libs/TencentLocationSdk_v6.2.5.3_r15b3b3cc_20171103_115903.jar')
+    compile project(path: ':library')
 }
 // bugly依赖插件脚本
 apply from: 'tinker-support.gradle'

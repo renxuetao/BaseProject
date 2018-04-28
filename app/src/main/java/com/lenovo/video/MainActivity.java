@@ -74,6 +74,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     @Override
+    protected int getLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
     protected void initData() {
 
     }
@@ -121,11 +126,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @Override
     protected void initStatusBar() {
         StatusBarUtil.setColor(this, getResources().getColor(R.color.colorPrimary));
-    }
-
-    @Override
-    protected int getLayoutId() {
-        return R.layout.activity_main;
     }
 
     @Override

@@ -3,10 +3,15 @@ package com.lenovo.video.fragment;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.view.ViewPager;
+import android.widget.Toast;
 
 import com.lenovo.video.MainActivity;
+import com.lenovo.video.R;
 import com.lenovo.video.base.BaseFragment;
+import com.viewpagerindicator.TabPageIndicator;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -17,6 +22,9 @@ public class FullVideoFragment extends BaseFragment {
 
     private MainActivity activity;
 
+    @BindView(R.id.indicator)
+    TabPageIndicator indicator;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +33,7 @@ public class FullVideoFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return 0;
+        return R.layout.full_frag_activity;
     }
 
     @Override
@@ -35,7 +43,8 @@ public class FullVideoFragment extends BaseFragment {
 
     @Override
     protected void initView(Bundle savedInstanceState) {
-
+        //如果我们要对ViewPager设置监听，用indicator设置就行了
+        indicator.setOnPageChangeListener(this);
     }
 
     @Override
@@ -62,5 +71,20 @@ public class FullVideoFragment extends BaseFragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
+    }
+
+    @Override
+    public void onPageSelected(int arg0) {
+        Toast.makeText(activity, "", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onPageScrolled(int arg0, float arg1, int arg2) {
+
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int arg0) {
+
     }
 }

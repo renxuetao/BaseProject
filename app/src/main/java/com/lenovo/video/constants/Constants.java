@@ -19,10 +19,8 @@ public class Constants {
     //    public static String pid = "pre";//1是正式版本 pre测试版本
 
     public static boolean isLog = true;//log输出开关
-    public static boolean isOpenKidsModel = false;//判断是否开启判断儿童模式方法
     public static boolean isOpenBigDataTest = false;//是否开启大数据测试
     public static boolean isOpenBuglyDebug = true;//是否开启bugly的debug
-    public static boolean isOpenAARModle = false;//是否开启aar版本
 
     /**
      * 正式接口分发
