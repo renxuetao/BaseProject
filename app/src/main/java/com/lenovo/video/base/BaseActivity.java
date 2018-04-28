@@ -33,6 +33,7 @@ import com.zhy.autolayout.AutoLinearLayout;
 import com.zhy.autolayout.AutoRelativeLayout;
 
 import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
 
 import java.util.Arrays;
 import java.util.List;
@@ -78,6 +79,10 @@ public abstract class BaseActivity extends FragmentActivity implements SocketCli
         initTools();
     }
 
+    @Subscribe
+    public void onEvent(String expand) {
+
+    }
 
 
     @Override
