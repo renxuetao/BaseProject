@@ -19,7 +19,7 @@ import java.util.Date;
 
 /**
  * SocketConnectUtil
- * Created by vilyever on 2016/7/26.
+ * Created by renxuetao on 2018/04/28.
  * Feature:
  */
 public class SocketConnectUtil {

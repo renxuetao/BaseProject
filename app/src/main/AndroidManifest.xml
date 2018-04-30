@@ -47,7 +47,7 @@
             android:value="${channel_value}" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
@@ -57,6 +57,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".network.socket.service.BackService"></service>
 
     </application>
 

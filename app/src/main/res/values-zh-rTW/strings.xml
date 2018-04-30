@@ -1,61 +1,10 @@
 <resources>
 
-    <!--<string name="app_name">联想视频</string>-->
-
-    <!--登录-->
     <string name="Confirm">确认</string>
     <string name="cancel">取消</string>
-    <string name="not_found_text">抱歉~，没有找到“%1$s”的相關視頻。~\n聯想視頻建議您：縮短關鍵字或更換關鍵字。</string>
-    <string name="No_Iqiyi">版权要求，需安装爱奇艺播放器播放</string>
-    <string name="install">安装</string>
-    <string name="please_enter_verify_password">請輸入密碼</string>
-    <string name="verification_code_error">驗證碼錯誤，請重新輸入</string>
-    <string name="phone_number_error">驗證碼錯誤，請重新輸入</string>
-    <string name="please_enter_your_phone_number">請輸入手機號碼</string>
-    <string name="please_enter_verify_code">請輸入驗證碼</string>
-    <string name="log_out_hint">退出登陸後您將無法享受雲服務，確認退出？</string>
-    <string name="kiss_choose_the_deleted_movie_first">親，要先選擇删除的影片哦！</string>
-    <string name="sorry_not_find">抱歉，沒有找到相關視頻。</string>
-    <string name="server404">服務器開小差了，點擊“重繪”重試哦~~</string>
-    <string name="sig_hint">您當前使用4G/3G/2G網絡；</string>
-    <string name="sig_hint_yes_no">您正在使用4G\3G網絡，是否繼續觀影</string>
-    <string name="copyright_notice">因版本要求，需安裝愛奇藝播放機進行播放</string>
-
-
-    <string name="account_Log_in">帳號登入</string>
-    <string name="Verification_Code_Login">簡訊驗證碼登入</string>
-    <string name="Account_Lenovo_id">聯想帳號或手機號</string>
-
-    <string name="Account_">帳號：</string>
-
-    <string name="Password_hint">6-20比特數位、字母或字元，區分大小寫</string>
-    <string name="Password_hint2">請再次輸入密碼</string>
-
-    <string name="Password">密碼:</string>
-
-
-    <string name="Find_password">找回密碼</string>
-    <string name="Register_Now">立即注册</string>
-    <string name="Log_in">登入</string>
-    <string name="Account_registration">帳號注册</string>
-    <string name="Photo_verification_code">圖片驗證碼：</string>
-    <string name="SMS_verification_code">簡訊驗證碼：</string>
-    <string name="Send_verification_code">發送驗證碼</string>
-    <string name="Register">登陆</string>
-    <string name="Change_password">修改密碼</string>
-    <string name="SMS_Login">簡訊快速登陸</string>
-    <string name="Verification_code">驗證碼：</string>
-    <string name="attention">我已詳細閱讀並同意聯想</string>
-    <string name="attention1">使用條款</string>
-    <string name="attention2">及</string>
-    <string name="attention3">隱私權政策</string>
-    <string name="check_the_network_connection">獲取驗證碼失敗，請檢查網絡連接</string>
-    <string name="attention_hint">請先勾選同意使用條款和隱私權政策</string>
-
-
-    <string name="updateHint">更新提醒</string>
-    <string name="updateHintContext">智慧聯想更新已安裝完畢，需要重新開機桌面以完成更新，將會佔用您幾秒鐘時間。</string>
-    <string name="updateHintR">立即重啟桌面</string>
-    <string name="updateHintNR">夜間重啟桌面</string>
-    <string name="updateHint_not">以後再說</string>
+    <string name="priority">Priority(%1$d)</string>
+    <string name="state_idle">IDLE</string>
+    <string name="state_pending">PENDING</string>
+    <string name="state_unknown">UNKNOWN</string>
+    <string name="state_running">RUNNING</string>
 </resources>

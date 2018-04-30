@@ -11,14 +11,13 @@ import android.os.StrictMode;
 import android.support.multidex.MultiDex;
 import android.view.View;
 
-import com.lenovo.video.MainActivity;
+import com.lenovo.video.activity.MainActivity;
 import com.lenovo.video.R;
 import com.lenovo.video.constants.Constants;
 import com.lenovo.video.constants.StorageConstants;
 import com.lenovo.video.listener.MyBetaPatchListener;
 import com.lenovo.video.network.socket.service.BackService;
 import com.lenovo.video.utils.LogUtils;
-import com.lenovo.video.utils.UnCrashThread;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 import com.tencent.bugly.Bugly;
@@ -138,7 +137,7 @@ public class MyApplication extends Application {
         //设置bugly下载监听
         Beta.betaPatchListener = new MyBetaPatchListener(this);
         // 这里实现SDK初始化，appId替换成你的在Bugly平台申请的appId 调试时，将第三个参数改为true
-        Bugly.init(this, getResources().getString(R.string.bugly_app_id), Constants.isOpenBuglyDebug);
+        Bugly.init(this, "2cca229f05", Constants.isOpenBuglyDebug);
     }
 
     @Override

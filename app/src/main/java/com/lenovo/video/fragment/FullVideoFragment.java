@@ -3,12 +3,11 @@ package com.lenovo.video.fragment;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
 import android.widget.Toast;
 
-import com.lenovo.video.MainActivity;
+import com.lenovo.video.activity.MainActivity;
 import com.lenovo.video.R;
-import com.lenovo.video.base.BaseFragment;
+import com.lenovo.video.activity.base.BaseFragment;
 import com.viewpagerindicator.TabPageIndicator;
 
 import butterknife.BindView;

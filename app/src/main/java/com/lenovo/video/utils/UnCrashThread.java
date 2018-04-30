@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.os.Looper;
 import android.widget.Toast;
 
-import com.lenovo.video.MainActivity;
+import com.lenovo.video.activity.MainActivity;
 
 /**
  * 类名称：UnCrashThread

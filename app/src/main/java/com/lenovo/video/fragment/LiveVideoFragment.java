@@ -4,8 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.lenovo.video.MainActivity;
-import com.lenovo.video.base.BaseFragment;
+import com.lenovo.video.activity.MainActivity;
+import com.lenovo.video.activity.base.BaseFragment;
 
 import butterknife.ButterKnife;
 

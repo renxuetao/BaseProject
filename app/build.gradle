@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
 
-
 //def getMyStoreFile(){
 //    if("true".equals(IS_JENKINS)){
 //        return file("./lenovoPadVideo.jks")
@@ -74,7 +73,7 @@ android {
             // 设置applicationId（这里很重要，两个相同applicationId的apk不同同时安装在同一台Android手机中）
             applicationId "com.lenovo.video"
             // 自动生成@string/app_name为demo
-            resValue "string","app_name","联想视频"
+            resValue "string", "app_name", "联想视频"
             // 定义app_icon字段，在AndroidManifest.xml文件中用到
             manifestPlaceholders = [app_icon: "@mipmap/ic_launcher", channel_value: "inner"]
         }
@@ -166,6 +165,14 @@ dependencies {
     //Tencnet lbs sdk
     compile files('libs/TencentLocationSdk_v6.2.5.3_r15b3b3cc_20171103_115903.jar')
     compile project(path: ':library')
+
+    //file download sdk
+    // core
+    compile 'com.liulishuo.okdownload:okdownload:1.0.3-SNAPSHOT'
+    // provide sqlite to store breakpoints
+    compile 'com.liulishuo.okdownload:sqlite:1.0.3-SNAPSHOT'
+    // provide okhttp to connect to backend
+    compile 'com.liulishuo.okdownload:okhttp:1.0.3-SNAPSHOT'
 }
 // bugly依赖插件脚本
 apply from: 'tinker-support.gradle'
