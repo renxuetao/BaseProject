@@ -2,6 +2,8 @@
 
     <string name="Confirm">Yes</string>
     <string name="cancel">No</string>
+    <string name="sig_hint">您当前使用4G/3G/2G网络</string>
+    <string name="sig_hint_yes_no">您正在使用4G\3G网络，是否继续观影</string>
 
     <string name="priority">Priority(%1$d)</string>
     <string name="state_idle">IDLE</string>

@@ -63,11 +63,11 @@ public class QueueRecyclerAdapter
 
         QueueViewHolder(View itemView) {
             super(itemView);
-            nameTv = itemView.findViewById(R.id.nameTv);
-            priorityTv = itemView.findViewById(R.id.priorityTv);
-            prioritySb = itemView.findViewById(R.id.prioritySb);
-            statusTv = itemView.findViewById(R.id.statusTv);
-            progressBar = itemView.findViewById(R.id.progressBar);
+            nameTv = (TextView)itemView.findViewById(R.id.nameTv);
+            priorityTv = (TextView)itemView.findViewById(R.id.priorityTv);
+            prioritySb = (SeekBar)itemView.findViewById(R.id.prioritySb);
+            statusTv = (TextView)itemView.findViewById(R.id.statusTv);
+            progressBar = (ProgressBar)itemView.findViewById(R.id.progressBar);
         }
     }
 }

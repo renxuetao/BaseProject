@@ -120,6 +120,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         } else {
 
         }
+
+        setTabSelection(0);
+
+        tab_view_1.setOnClickListener(this);
+        tab_view_2.setOnClickListener(this);
+        tab_view_3.setOnClickListener(this);
+        tab_view_4.setOnClickListener(this);
+        tab_view_5.setOnClickListener(this);
     }
 
     @Override

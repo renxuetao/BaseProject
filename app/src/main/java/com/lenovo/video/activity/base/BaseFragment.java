@@ -4,22 +4,42 @@ import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
 
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
+
+
+/**
+ * Created by renxuetao on 2018/5/1.
+ */
 public abstract class BaseFragment extends Fragment implements ViewPager.OnPageChangeListener {
+
+    View contextView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EventBus.getDefault().register(this);
+    }
 
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        contextView = inflater.inflate(getLayoutId(), container, false);
+        EventBus.getDefault().register(this);
+        ButterKnife.bind(this, contextView);
+
+        initView(savedInstanceState);
         initStatusBar();
         initPresenter();
         initData();
-        initView(savedInstanceState);
         initTools();
+        return contextView;
     }
 
     @Override
@@ -28,6 +48,11 @@ public abstract class BaseFragment extends Fragment implements ViewPager.OnPageC
         if (getView() != null) {
             getView().setVisibility(menuVisible ? View.VISIBLE : View.INVISIBLE);
         }
+    }
+
+    @Subscribe
+    public void onEvent(String expand) {
+
     }
 
     /**
@@ -61,6 +86,11 @@ public abstract class BaseFragment extends Fragment implements ViewPager.OnPageC
     public void onDestroy() {
         super.onDestroy();
         EventBus.getDefault().unregister(this);
+        /**
+         * 取消绑定服务
+         */
+        Unbinder bind = ButterKnife.bind(this, contextView);
+        bind.unbind();
     }
 
     @Override
