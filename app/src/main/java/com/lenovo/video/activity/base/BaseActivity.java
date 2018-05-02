@@ -72,8 +72,8 @@ public abstract class BaseActivity extends MPermissionsActivity implements Socke
         initStatusBar();
         initPresenter();
         initData();
-        initView(savedInstanceState);
         initTools();
+        initView(savedInstanceState);
     }
 
     @Subscribe

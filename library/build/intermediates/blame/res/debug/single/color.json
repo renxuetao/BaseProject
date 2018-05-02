@@ -1,10 +1,18 @@
 [
     {
+        "merged": "D:\\Git\\github\\BaseProject\\library\\build\\intermediates\\res\\merged\\debug\\color\\vpi__dark_theme.xml",
+        "source": "D:\\Git\\github\\BaseProject\\library\\src\\main\\res\\color\\vpi__dark_theme.xml"
+    },
+    {
         "merged": "D:\\Git\\trunks\\LenovoVideoPhone\\library\\build\\intermediates\\res\\merged\\debug\\color\\vpi__dark_theme.xml",
         "source": "D:\\Git\\trunks\\LenovoVideoPhone\\library\\src\\main\\res\\color\\vpi__dark_theme.xml"
     },
     {
         "merged": "D:\\Git\\trunks\\LenovoVideoPhone\\library\\build\\intermediates\\res\\merged\\debug\\color\\vpi__light_theme.xml",
         "source": "D:\\Git\\trunks\\LenovoVideoPhone\\library\\src\\main\\res\\color\\vpi__light_theme.xml"
+    },
+    {
+        "merged": "D:\\Git\\github\\BaseProject\\library\\build\\intermediates\\res\\merged\\debug\\color\\vpi__light_theme.xml",
+        "source": "D:\\Git\\github\\BaseProject\\library\\src\\main\\res\\color\\vpi__light_theme.xml"
     }
 ]

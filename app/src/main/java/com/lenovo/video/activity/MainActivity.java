@@ -1,6 +1,8 @@
 package com.lenovo.video.activity;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,8 +14,9 @@ import android.widget.LinearLayout;
 
 import com.jaeger.library.StatusBarUtil;
 import com.lenovo.video.R;
-import com.lenovo.video.app.MyApplication;
 import com.lenovo.video.activity.base.BaseActivity;
+import com.lenovo.video.app.ActivityManager;
+import com.lenovo.video.app.MyApplication;
 import com.lenovo.video.fragment.FullVideoFragment;
 import com.lenovo.video.fragment.HotVideoFragment;
 import com.lenovo.video.fragment.LiveVideoFragment;
@@ -21,6 +24,8 @@ import com.lenovo.video.fragment.MyFragment;
 import com.lenovo.video.fragment.VipVideoFragment;
 import com.vilyever.socketclient.SocketClient;
 import com.vilyever.socketclient.helper.SocketResponsePacket;
+
+import java.lang.ref.WeakReference;
 
 import butterknife.BindView;
 
@@ -61,11 +66,30 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     View tab_view_4;
     @BindView(R.id.linearLayout_tab_5)
     View tab_view_5;
-
     @BindView(R.id.tab_menu)
     public LinearLayout tab_menu = null;
 
     public int tab_index = -1;
+    private MyHandler myHandler = null;
+
+
+    /**
+     * 弱引用
+     */
+    private static class MyHandler extends Handler {
+        private final WeakReference<MainActivity> mActivityReference;
+
+        public MyHandler(MainActivity activity) {
+            mActivityReference = new WeakReference<MainActivity>(activity);
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            MainActivity activity = mActivityReference.get();
+            if (activity != null) {
+            }
+        }
+    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -89,7 +113,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void initTools() {
-
+        myHandler = new MyHandler(this);
     }
 
     @Override
@@ -128,6 +152,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         tab_view_3.setOnClickListener(this);
         tab_view_4.setOnClickListener(this);
         tab_view_5.setOnClickListener(this);
+
+        //添加activity入栈
+        ActivityManager.getScreenManager().currentActivity();
     }
 
     @Override

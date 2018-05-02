@@ -1,8 +1,8 @@
 package com.lenovo.video.activity.base;
 
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,11 +34,11 @@ public abstract class BaseFragment extends Fragment implements ViewPager.OnPageC
         EventBus.getDefault().register(this);
         ButterKnife.bind(this, contextView);
 
-        initView(savedInstanceState);
         initStatusBar();
         initPresenter();
         initData();
         initTools();
+        initView(savedInstanceState);
         return contextView;
     }
 

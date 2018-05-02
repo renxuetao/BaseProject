@@ -2,5 +2,9 @@
     {
         "merged": "D:\\Git\\trunks\\LenovoVideoPhone\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\vpi__tab_indicator.xml",
         "source": "D:\\Git\\trunks\\LenovoVideoPhone\\library\\build\\intermediates\\bundles\\debug\\res\\drawable\\vpi__tab_indicator.xml"
+    },
+    {
+        "merged": "D:\\Git\\github\\BaseProject\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\vpi__tab_indicator.xml",
+        "source": "D:\\Git\\github\\BaseProject\\library\\build\\intermediates\\bundles\\debug\\res\\drawable\\vpi__tab_indicator.xml"
     }
 ]
