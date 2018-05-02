@@ -15,7 +15,6 @@ import android.widget.LinearLayout;
 import com.jaeger.library.StatusBarUtil;
 import com.lenovo.video.R;
 import com.lenovo.video.activity.base.BaseActivity;
-import com.lenovo.video.app.ActivityManager;
 import com.lenovo.video.app.MyApplication;
 import com.lenovo.video.fragment.FullVideoFragment;
 import com.lenovo.video.fragment.HotVideoFragment;
@@ -153,8 +152,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         tab_view_4.setOnClickListener(this);
         tab_view_5.setOnClickListener(this);
 
-        //添加activity入栈
-        ActivityManager.getScreenManager().currentActivity();
     }
 
     @Override

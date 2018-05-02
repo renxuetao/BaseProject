@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:orientation="vertical">
+        <!--android:layout_marginTop="47dp"-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- 我的动态 -->
+                <RelativeLayout
+                    android:id="@id/vip_center_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="60.0dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@id/vip_center_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="19.24dp"
+                        android:background="@mipmap/ic_launcher" />
+
+                    <ImageView
+                        android:id="@id/vip_center_arrow"
+                        android:layout_width="8.10dp"
+                        android:layout_height="14.17dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.12dp"
+                        android:background="@mipmap/ic_launcher" />
+
+                    <ImageView
+                        android:id="@+id/vip_center_dor"
+                        android:layout_width="12.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toLeftOf="@id/vip_center_arrow"
+                        android:background="@drawable/newmsg_red_bg"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="57.72dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="!!!!!!!!!!!!!!!!!!!!"
+                            android:textColor="#5f5f5f"
+                            android:textSize="15.18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="!!!!!!!!!!!!!!!!!!!!"
+                            android:textColor="#5f5f5f"
+                            android:textSize="15.18dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/grey_line" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- 我的动态 -->
+                        <RelativeLayout
+                            android:id="@id/my_wallet_rl"
+                            android:layout_width="match_parent"
+                            android:layout_height="43.54dp">
+
+                            <ImageView
+                                android:id="@id/my_wallet_icon"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="19.24dp"
+                                android:background="@mipmap/ic_launcher" />
+
+                            <ImageView
+                                android:id="@id/my_wallet_arrow"
+                                android:layout_width="8.10dp"
+                                android:layout_height="14.17dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10.12dp"
+                                android:background="@mipmap/ic_launcher" />
+
+                            <ImageView
+                                android:id="@+id/my_wallet_dot"
+                                android:layout_width="12.0dip"
+                                android:layout_height="12.0dip"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toLeftOf="@id/my_wallet_arrow"
+                                android:background="@drawable/newmsg_red_bg"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="57.72dp"
+                                android:text="!!!!!!!!!!!!!!!!!!!!"
+                                android:textColor="#5f5f5f"
+                                android:textSize="15.18dp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:background="@color/grey_line"></ImageView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@id/my_message_rl"
+                            android:layout_width="match_parent"
+                            android:layout_height="43.54dp">
+
+                            <ImageView
+                                android:layout_width="23.29dp"
+                                android:layout_height="23.29dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="19.24dp"
+                                android:background="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="57.72dp"
+                                android:text="!!!!!!!!!!!!!!!!!!!!!!!"
+                                android:textColor="#5f5f5f"
+                                android:textSize="15.18dp" />
+
+                            <ImageView
+                                android:layout_width="8.10dp"
+                                android:layout_height="14.17dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10.12dp"
+                                android:background="@mipmap/ic_launcher"></ImageView>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:background="@color/grey_line"></ImageView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@id/my_cash_rl"
+                            android:layout_width="match_parent"
+                            android:layout_height="43.54dp">
+
+                            <ImageView
+                                android:id="@id/my_cash_icon"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="19.24dp"
+                                android:background="@mipmap/ic_launcher" />
+
+                            <ImageView
+                                android:id="@id/my_cash_arrow"
+                                android:layout_width="8.10dp"
+                                android:layout_height="14.17dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10.12dp"
+                                android:background="@mipmap/ic_launcher"></ImageView>
+
+                            <ImageView
+                                android:id="@+id/my_cash_dot"
+                                android:layout_width="12.0dip"
+                                android:layout_height="12.0dip"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toLeftOf="@id/my_cash_arrow"
+                                android:background="@drawable/newmsg_red_bg"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="57.72dp"
+                                android:text="!!!!!!!!!!!!!!!!!!!"
+                                android:textColor="#5f5f5f"
+                                android:textSize="15.18dp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:background="@color/grey_line"></ImageView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/my_history_rl"
+                            android:layout_width="match_parent"
+                            android:layout_height="43.54dp">
+
+                            <ImageView
+                                android:id="@+id/my_history_icon"
+                                android:layout_width="23.29dp"
+                                android:layout_height="23.29dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="19.24dp"
+                                android:background="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="57.72dp"
+                                android:text="!!!!!!!!!!!!!!!!"
+                                android:textColor="#5f5f5f"
+                                android:textSize="15.18dp" />
+
+                            <ImageView
+                                android:id="@+id/my_history_arrow"
+                                android:layout_width="8.10dp"
+                                android:layout_height="14.17dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10.12dp"
+                                android:background="@mipmap/ic_launcher" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:background="@color/grey_line"></ImageView>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_line" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/grey_line" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_line" />
+
+                    <!-- 收到礼物 -->
+                    <RelativeLayout
+                        android:id="@id/my_collect_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="43.54dp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@id/my_collect_icon"
+                            android:layout_width="21.26dp"
+                            android:layout_height="24.30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="19.24dp"
+                            android:background="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="57.72dp"
+                            android:text="收到的礼物"
+                            android:textColor="#5f5f5f"
+                            android:textSize="15.18dp" />
+
+                        <ImageView
+                            android:id="@+id/my_collect_arrow"
+                            android:layout_width="8.10dp"
+                            android:layout_height="14.17dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10.12dp"
+                            android:background="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/my_collect_msg"
+                            android:layout_width="22.27dp"
+                            android:layout_height="23.29dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/newmsg_red_bg"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@color/grey_line"/>
+
+                    <RelativeLayout
+                        android:id="@id/shop_center_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="43.54dp">
+
+                        <ImageView
+                            android:id="@+id/shop_center_icon"
+                            android:layout_width="22.78dp"
+                            android:layout_height="22.78dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="19.24dp"
+                            android:background="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="57.72dp"
+                            android:text="!!!!!!!!!!!!!"
+                            android:textColor="#5f5f5f"
+                            android:textSize="15.18dp" />
+
+                        <ImageView
+                            android:id="@+id/shop_center_arrow"
+                            android:layout_width="8.10dp"
+                            android:layout_height="14.17dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10.12dp"
+                            android:background="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/shop_center_dot"
+                            android:layout_width="12dp"
+                            android:layout_height="11dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="45dp"
+                            android:background="@drawable/newmsg_red_bg"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@color/grey_line"/>
+
+                    <RelativeLayout
+                        android:id="@id/help_center_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="43.54dp">
+
+                        <ImageView
+                            android:id="@+id/help_center_icon"
+                            android:layout_width="22.78dp"
+                            android:layout_height="22.78dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="19.24dp"
+                            android:background="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="57.72dp"
+                            android:text="!!!!!!!!!!!!!"
+                            android:textColor="#5f5f5f"
+                            android:textSize="15.18dp" />
+
+                        <ImageView
+                            android:id="@+id/help_center_arrow"
+                            android:layout_width="8.10dp"
+                            android:layout_height="14.17dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10.12dp"
+                            android:background="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/help_center_dot"
+                            android:layout_width="12dp"
+                            android:layout_height="11dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="45dp"
+                            android:background="@drawable/newmsg_red_bg"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_line" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

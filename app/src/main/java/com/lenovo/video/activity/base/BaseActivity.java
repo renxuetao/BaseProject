@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.lenovo.video.R;
+import com.lenovo.video.app.ActivityManager;
 import com.lenovo.video.app.MyApplication;
 import com.lenovo.video.utils.LogUtils;
 import com.tencent.map.geolocation.TencentLocation;
@@ -74,6 +75,8 @@ public abstract class BaseActivity extends MPermissionsActivity implements Socke
         initData();
         initTools();
         initView(savedInstanceState);
+        //添加activity入栈
+        ActivityManager.getScreenManager().pushActivity(this);
     }
 
     @Subscribe

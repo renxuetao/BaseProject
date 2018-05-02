@@ -3,4 +3,30 @@
     <item name="swipe_target" type="id" />
     <item name="swipe_refresh_header" type="id" />
     <item name="swipe_load_more_footer" type="id" />
+
+    <item name="my_wallet_rl" type="id" />
+    <item name="my_wallet_icon" type="id" />
+    <item name="my_wallet_arrow" type="id" />
+    <item name="my_message_rl" type="id" />
+    <item name="my_message_icon" type="id" />
+    <item name="my_message_arrow" type="id" />
+    <item name="my_cash_rl" type="id" />
+    <item name="my_cash_icon" type="id" />
+    <item name="my_cash_arrow" type="id" />
+    <item name="my_history_rl" type="id" />
+    <item name="my_history_icon" type="id" />
+    <item name="my_history_arrow" type="id" />
+
+    <item name="my_collect_rl" type="id" />
+    <item name="my_collect_icon" type="id" />
+    <item name="my_collect_arrow" type="id" />
+    <item name="shop_center_rl" type="id" />
+    <item name="shop_center_icon" type="id" />
+    <item name="shop_center_arrow" type="id" />
+    <item name="help_center_rl" type="id" />
+    <item name="help_center_arrow" type="id" />
+    <item name="help_center_icon" type="id" />
+    <item name="vip_center_rl" type="id" />
+    <item name="vip_center_arrow" type="id" />
+    <item name="vip_center_icon" type="id" />
 </resources>
