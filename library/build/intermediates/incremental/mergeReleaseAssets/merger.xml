@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\Git\github\BaseProject\library\src\main\assets"/><source path="D:\Git\github\BaseProject\library\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\Git\github\BaseProject\library\src\release\assets"/></dataSet></merger>
